@@ -17,5 +17,10 @@
       "js": ["content.js"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-genre-filter@himeshdua.com"
+    }
+  }
 }

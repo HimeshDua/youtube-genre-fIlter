@@ -12,7 +12,14 @@ const clearBtn = document.getElementById('clearGenres');
 
 GENRES.forEach((genre) => {
   const label = document.createElement('label');
-  label.innerHTML = `<input type="checkbox" value="${genre}" /> ${genre}`;
+
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.value = genre;
+
+  label.appendChild(checkbox);
+  label.appendChild(document.createTextNode(' ' + genre));
+
   form.appendChild(label);
 });
 
